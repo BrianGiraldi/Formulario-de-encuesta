@@ -1,0 +1,84 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this short survey.</p>
+
+    <form id="survey-form">
+      <!-- Name -->
+      <label id="name-label" for="name">Name</label>
+      <input
+        id="name"
+        type="text"
+        placeholder="Enter your name"
+        required
+      />
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <!-- Number -->
+      <label id="number-label" for="number">Age (optional)</label>
+      <input
+        id="number"
+        type="number"
+        min="10"
+        max="99"
+        placeholder="Enter your age"
+      />
+
+      <!-- Dropdown -->
+      <label for="dropdown">Which option best describes your role?</label>
+      <select id="dropdown">
+        <option value="student">Student</option>
+        <option value="developer">Developer</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Radio buttons (same name, values present) -->
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <label>
+        <input type="radio" name="recommend" value="yes" /> Yes
+      </label>
+      <label>
+        <input type="radio" name="recommend" value="no" /> No
+      </label>
+
+      <!-- Checkboxes (values present) -->
+      <p>What would you like to learn more about?</p>
+      <label>
+        <input type="checkbox" value="front-end" /> Front-end
+      </label>
+      <label>
+        <input type="checkbox" value="back-end" /> Back-end
+      </label>
+      <label>
+        <input type="checkbox" value="data" /> Data
+      </label>
+
+      <!-- Textarea -->
+      <p>Additional comments:</p>
+      <textarea placeholder="Write your comments here..."></textarea>
+
+      <!-- Submit -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
+
+
+** end of index.html **
+
